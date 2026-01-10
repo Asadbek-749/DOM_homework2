@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.box {
+  padding: 5px;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 800px;
+  height: 800px;
+  border: 2px solid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+.square1,
+.square2,
+.square3,
+.square4,
+.square5,
+.square6,
+.square7,
+.square8,
+.square9 {
+  cursor: pointer;
+  width: 259px;
+  height: 259px;
+  border: 2px solid rgb(59, 47, 47);
+  font-size: 100px;
+  text-align: center;
+  padding: 85px;
+}
+
