@@ -14,19 +14,29 @@
           <h2>Birini tanlang</h2>
         </div>
         <div class="buttons">
-          <button class="rock">🪨 <br />Tosh</button>
-          <button class="scissors">
+          <button onclick="play(this.value)" class="rock" value="tosh">🪨 <br />Tosh</button>
+          <button onclick="play(this.value)" class="scissors" value="qaychi">
             ✂️ <br />
             Qaychi
           </button>
-          <button class="paper">
+          <button onclick="play(this.value)" class="paper" value="qogoz">
             📄<br />
             Qog'oz
           </button>
         </div>
       </div>
-      <div class="result" id="result"></div>
-      <div class="box"></div>
+      <label class="label" for="user-choice">Sizning tanlovingiz</label>
+      <div class="user-choice" id="user-choice">
+        <span>
+          📄<br />
+          Qog'oz
+        </span>
+      </div>
+      <label class="label" for="computer-choice">Mashina tanlovi</label>
+      <div class="computer-choice" id="computer-choice">
+        <span> 🪨 <br />Tosh </span>
+      </div>
+      <div class="result win" id="result">Ga'laba</div>
     </div>
     <script src="./script.js"></script>
   </body>
